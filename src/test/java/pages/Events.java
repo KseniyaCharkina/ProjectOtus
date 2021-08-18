@@ -16,7 +16,8 @@ public class Events extends AbstractPage {
     private final By date = By.xpath(".//p/span[contains(@class,'date')]");
     private final By reg = By.cssSelector("span.status.reg-close");
     private final By speaker = By.xpath("//p[contains(text(),'Speakers']");
-
+    private final By locationFilter = By.id("filter_location");
+    private final By canadaEnter = By.cssSelector("label[data-value= Canada]");
 
     public Events(WebDriver driver) {
         super(driver);
@@ -59,27 +60,23 @@ public class Events extends AbstractPage {
         driver.findElement(upComingEventsButton).click();
     }
 
-    public Map<String,String> validateDate() {
+    public List<String> getDates() {
         List<WebElement> listCards = driver.findElements(card);
-        Map<String, String> dateMap = new HashMap<>();
-
-        StringBuilder startDate;
-        String endDate;
+        List<String> dates = new ArrayList<>();
 
         for (WebElement card : listCards) {
-            String dateline = card.findElement(date).getText();
-            String one = dateline.substring(0, dateline.indexOf("-"));
-            endDate = dateline.substring(dateline.indexOf("-") + 2);
-            String year = dateline.substring(dateline.length() - 4);
-            startDate = new StringBuilder(one);
-            startDate.append(year);
-            dateMap.put(startDate.toString(), endDate);
+            dates.add(card.findElement(date).getText());
         }
-
-        return dateMap;
-
-
-
+        return dates;
     }
+
+    public void locationFilter() {
+        driver.findElement(locationFilter).click();
+    }
+
+    public void canadaEnter() {
+        driver.findElement(canadaEnter).click();
+    }
+
 
 }
