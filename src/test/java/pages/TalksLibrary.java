@@ -12,6 +12,9 @@ public class TalksLibrary extends AbstractPage {
     private final By language = By.xpath("//span[contains(text(),'Language')]");
     private final By english = By.cssSelector("label[data-value = ENGLISH]");
     private final By card = By.cssSelector("div.evnt-talks-column.cell-6");
+    private final By input = By.cssSelector("input.evnt-text-fields.form-control.evnt-search");
+
+
 
     public TalksLibrary(WebDriver driver) {
         super(driver);
@@ -54,6 +57,11 @@ public class TalksLibrary extends AbstractPage {
 
     public void cardEnter() {
         driver.findElement(card).click();
+    }
+
+    public TalksLibrary inputData(String word) {
+        driver.findElement(input).sendKeys(word);
+        return this;
     }
 
 
