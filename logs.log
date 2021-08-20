@@ -1,0 +1,120 @@
+2021-08-16 11:37:00,053 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-08-16 11:37:42,751 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-08-16 11:40:37,845 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-16 14:04:06,280 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-17 13:12:40,198 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-17 15:04:18,709 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 15:04:54,396 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 15:35:22,094 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 15:39:58,377 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-17 15:40:41,790 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 15:45:11,809 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 16:16:17,984 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 16:17:06,922 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 16:28:41,715 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 16:29:33,060 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 17:02:42,918 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 17:08:35,944 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 17:12:48,487 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 17:13:26,205 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 20:55:29,403 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 22:50:07,115 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 22:51:48,951 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 22:57:28,329 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 23:08:24,432 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 23:13:03,890 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 23:18:36,567 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 23:27:13,830 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-17 23:29:35,745 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-18 11:28:11,688 INFO c.EventsCanada [main] Драйвер поднят
+2021-08-18 11:29:39,566 INFO c.EventsCanada [main] Драйвер поднят
+2021-08-18 11:39:52,779 INFO c.EventsCanada [main] Драйвер поднят
+2021-08-18 11:45:00,200 INFO c.EventsCanada [main] Драйвер поднят
+2021-08-18 11:46:28,514 INFO c.EventsCanada [main] Драйвер поднят
+2021-08-18 12:00:45,800 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-18 12:01:07,856 INFO c.EventsCanada [main] Драйвер поднят
+2021-08-18 17:36:47,872 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-18 17:38:22,376 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-18 17:44:08,833 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-18 17:45:28,120 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-18 18:43:07,902 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-18 18:44:01,747 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 17:31:45,771 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 17:34:13,727 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 17:57:48,323 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:00:50,666 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:07:30,906 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-19 18:07:34,922 INFO c.ValidationDateTest [main] Переход в вкладку EVENTS
+2021-08-19 18:07:36,573 INFO c.ValidationDateTest [main] Получен лист дат
+2021-08-19 18:08:02,795 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-08-19 18:08:06,536 INFO c.ValidationDateTest [main] Переход в вкладку EVENTS
+2021-08-19 18:08:08,118 INFO c.ValidationDateTest [main] Получен лист дат
+2021-08-19 18:25:22,152 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:25:56,867 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:26:47,665 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:28:14,723 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:30:48,916 INFO c.FilterReportTest [main] Драйвер поднят
+2021-08-19 18:59:04,891 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-19 18:59:09,974 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-19 18:59:10,829 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 09:51:39,595 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 09:51:45,335 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 09:51:46,516 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 09:59:49,215 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 09:59:54,016 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 09:59:55,598 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 10:00:38,458 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 10:00:43,263 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 10:00:44,230 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 13:51:28,577 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 13:51:45,045 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 13:51:45,740 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 13:54:46,079 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 13:54:56,947 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 13:54:58,644 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 13:56:13,045 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 13:56:21,517 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 13:56:27,779 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 23:39:18,214 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:39:23,541 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 23:39:26,111 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 23:40:43,409 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:41:09,293 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:41:27,338 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:44:44,025 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:45:49,660 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:45:54,309 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 23:45:55,373 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 23:50:30,618 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:50:36,356 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 23:50:37,236 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 23:54:55,757 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:54:59,801 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 23:55:01,237 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-20 23:57:57,226 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-20 23:58:04,064 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-20 23:58:04,160 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-21 00:10:53,977 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-21 00:10:59,574 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-21 00:12:57,508 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-21 00:13:01,527 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-21 00:13:42,611 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-21 00:13:46,297 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-21 00:15:44,700 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-08-21 00:15:49,295 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-08-21 00:15:55,304 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-21 00:17:52,189 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-21 00:19:29,149 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-21 00:19:33,777 INFO c.EventsCanadaTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-21 00:19:34,540 INFO c.EventsCanadaTest [main] Установлен фильтр Canada
+2021-08-21 00:20:10,203 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-08-21 00:20:15,320 INFO c.EventsCanadaTest [main] Выбрана вкладка PAST_EVENTS
+2021-08-21 00:20:16,174 INFO c.EventsCanadaTest [main] Установлен фильтр Canada
+2021-08-21 00:44:24,689 INFO c.ReportQATest [main] Драйвер поднят
+2021-08-21 00:44:28,721 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-08-21 00:45:05,869 INFO c.ReportQATest [main] Драйвер поднят
+2021-08-21 00:45:09,899 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-08-21 00:45:30,370 INFO c.ReportQATest [main] Драйвер поднят
+2021-08-21 00:45:34,818 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-08-21 00:47:06,147 INFO c.ReportQATest [main] Драйвер поднят
+2021-08-21 00:47:11,726 INFO c.ReportQATest [main] Переход на страницу VIDEO
