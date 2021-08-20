@@ -17,8 +17,10 @@ public class ViewEventsTest extends BaseSettings {
         logger.info("Драйвер поднят");
         homePage.open()
                 .clickEvents();
+        logger.info("Переход в вкладку EVENTS");
         Events events = new Events(driver);
+        //Сравниваем кол-во мероприятий и карточек
         Assert.assertEquals(events.getEvents(),events.getCards());
-        logger.info(events.getCards());
+
     }
 }

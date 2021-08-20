@@ -12,13 +12,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class EventsCanada extends BaseSettings {
-    private final Logger logger = LogManager.getLogger(EventsCanada.class);
+public class EventsCanadaTest extends BaseSettings {
+    private final Logger logger = LogManager.getLogger(EventsCanadaTest.class);
     private final Date now = new Date();
     private final SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy", Locale.ENGLISH);
 
     @Test
-   public void validationEventsCanada() throws ParseException, InterruptedException {
+    public void validationDateEventsCanada() throws ParseException, InterruptedException {
         Map<String, String> dateMap = new HashMap<>();
         StringBuilder startDate;
         String endDate;
@@ -29,12 +29,14 @@ public class EventsCanada extends BaseSettings {
                 .clickEvents();
         Events events = new Events(driver);
         events.enterPastEvents();
+        logger.info("Выбрана вкладка PAST_EVENTS");
         events.locationFilter();
         events.canadaEnter();
+        logger.info("Установлен фильтр Canada");
         Thread.sleep(5000);
-
+        //Проходим по листу.Разбиваем строку на подстроки - начало и конец мероприятия.Кладем в мапу.
         List<String> dates = events.getDates();
-        for(String date : dates){
+        for (String date : dates) {
 
             String one = date.substring(0, date.indexOf("-"));
             endDate = date.substring(date.indexOf("-") + 2);
@@ -43,6 +45,7 @@ public class EventsCanada extends BaseSettings {
             startDate.append(monthAndYear);
             dateMap.put(startDate.toString(), endDate);
         }
+        //Итерация по мапе.Получаем даты в строковом значении и преобразуем в Date.Assert по условиям.
         for (Map.Entry<String, String> entry : dateMap.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();
@@ -50,8 +53,10 @@ public class EventsCanada extends BaseSettings {
             Date end = format.parse(value);
             Assert.assertTrue(now.after(start) & now.after(end));
 
-        }
 
+        }
+        //Сравниваем кол-во мероприятий и карточек
+        Assert.assertEquals(events.getPastEvents(), events.getCards());
 
     }
 }

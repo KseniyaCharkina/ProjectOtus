@@ -28,10 +28,13 @@ public class ValidationDateTest extends BaseSettings {
         logger.info("Драйвер поднят");
         homePage.open()
                 .clickEvents();
+        logger.info("Переход в вкладку EVENTS");
         Events events = new Events(driver);
         events.enterUpcomingEvents();
         List<String> dates = events.getDates();
-        for(String date : dates){
+        logger.info("Получен лист дат в формате string");
+        //Проходим по листу.Разбиваем строку на подстроки - начало и конец мероприятия.Кладем в мапу.
+        for (String date : dates) {
 
             String one = date.substring(0, date.indexOf("-"));
             endDate = date.substring(date.indexOf("-") + 2);
@@ -40,6 +43,7 @@ public class ValidationDateTest extends BaseSettings {
             startDate.append(year);
             dateMap.put(startDate.toString(), endDate);
         }
+        //Итерация по мапе.Получаем даты в строковом значении и преобразуем в Date.Assert по условиям.
         for (Map.Entry<String, String> entry : dateMap.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();

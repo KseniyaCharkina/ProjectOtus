@@ -3,11 +3,13 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.*;
 
 public class Events extends AbstractPage {
     private final By eventsCount = By.xpath("//span[@class='evnt-tab-counter evnt-label small white']");
+    private final By pastEventsCount = By.cssSelector("a.active:nth-child(1) > span:nth-child(3)");
     private final By card = By.xpath("//div[contains(@class,'evnt-event-card')]");
     private final By pastEventsButton = By.cssSelector("li.evnt-tab-item:nth-child(2)");
     private final By upComingEventsButton = By.cssSelector("li.evnt-tab-item:nth-child(1)");
@@ -15,7 +17,7 @@ public class Events extends AbstractPage {
     private final By name = By.cssSelector("div.evnt-event-name");
     private final By date = By.xpath(".//p/span[contains(@class,'date')]");
     private final By reg = By.cssSelector("span.status.reg-close");
-    private final By speaker = By.xpath("//p[contains(text(),'Speakers']");
+    private final By speaker = By.cssSelector("div.speakers-wrapper");
     private final By locationFilter = By.id("filter_location");
     private final By canadaEnter = By.cssSelector("label[data-value= Canada]");
 
@@ -27,30 +29,15 @@ public class Events extends AbstractPage {
         return driver.findElements(card).size();
     }
 
-    public int getLanguage() {
-        return driver.findElements(language).size();
-    }
-
-    public int getName() {
-        return driver.findElements(name).size();
-    }
-
-    public int getDate() {
-        return driver.findElements(date).size();
-    }
-
-    public int getReg() {
-        return driver.findElements(reg).size();
-    }
-
-    public int getSpeaker() {
-        return driver.findElements(speaker).size();
-    }
-
 
     public int getEvents() {
         return Integer.parseInt(driver.findElement(eventsCount).getText());
     }
+
+    public int getPastEvents() {
+        return Integer.parseInt(driver.findElement(pastEventsCount).getText());
+    }
+
 
     public void enterPastEvents() {
         driver.findElement(pastEventsButton).click();
@@ -74,8 +61,27 @@ public class Events extends AbstractPage {
         driver.findElement(locationFilter).click();
     }
 
+    public boolean validateAtributes() {
+        //Получаем лист карточек
+        List<WebElement> list = driver.findElements(card);
+        //Проходим по листу.Получаем нужный атрибут карточки проверяем на заполненность.
+        //Спикеры проверяем на наличие элемента.
+        for (WebElement el : list) {
+            String lan = el.findElement(language).getText();
+            String nam = el.findElement(name).getText();
+            String dat = el.findElement(date).getText();
+            String infoReg = el.findElement(reg).getText();
+            driver.findElement(speaker);
+            if (lan.isEmpty() | nam.isEmpty() | dat.isEmpty() | infoReg.isEmpty()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void canadaEnter() {
         driver.findElement(canadaEnter).click();
+
     }
 
 

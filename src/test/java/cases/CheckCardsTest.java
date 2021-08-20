@@ -17,17 +17,13 @@ public class CheckCardsTest extends BaseSettings {
         logger.info("Драйвер поднят");
         homePage.open()
                 .clickEvents();
+        logger.info("Переход в вкладку EVENTS");
         Events events = new Events(driver);
         events.enterPastEvents();
         Thread.sleep(5000);
-        int count = events.getCards();
-        /*logger.info(count);
-        logger.info(events.getLanguage());*/
-        Assert.assertEquals(count,events.getLanguage());
-        Assert.assertEquals(count,events.getName());
-        Assert.assertEquals(count,events.getDate());
-        Assert.assertEquals(count,events.getReg());
-        Assert.assertEquals(count,events.getSpeaker());
+        logger.info("Выбрана вкладка PAST_EVENTS");
+        Assert.assertTrue(events.validateAtributes());
+
 
 
 

@@ -9,14 +9,16 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseSettings {
     protected static WebDriver driver;
+
+
     @BeforeClass
     public static void setUp() {
         driver = WebDriverFactory.createNewDriver(WebDriverType.GHROME);
-        if (driver != null) {
-            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-            driver.manage().window().maximize();
 
+        if (driver != null) {
+            driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
         }
 
     }
