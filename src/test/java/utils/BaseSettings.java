@@ -4,8 +4,12 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
-import java.util.concurrent.TimeUnit;
+import java.net.MalformedURLException;
+import java.net.URI;
+
 
 public class BaseSettings {
     protected static WebDriver driver;
@@ -13,19 +17,22 @@ public class BaseSettings {
 
     @BeforeClass
     public static void setUp() {
-        driver = WebDriverFactory.createNewDriver(WebDriverType.GHROME);
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserVersion", "91.0");
+        capabilities.setCapability("enableVideo", true);
+        capabilities.setCapability("enableVideo", true);
 
-        if (driver != null) {
-            driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-            driver.manage().window().maximize();
+        try {
+            driver = new RemoteWebDriver(
+                    URI.create("http://localhost:4444/wd/hub").toURL(), capabilities
+            );
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
         }
 
     }
 
-    public static void refresh() {
-        driver.navigate().refresh();
-    }
 
     @AfterClass
     public static void setDown() {
