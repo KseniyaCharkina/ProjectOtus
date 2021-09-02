@@ -1,5 +1,6 @@
 package cases;
 
+import io.qameta.allure.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -12,6 +13,10 @@ public class ViewEventsTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(ViewEventsTest.class);
 
     @Test
+    @Step("Сравнение кол-ва мероприятий и карточек")
+    @Epic("ViewEvents-Корректное отображение карточек")
+    @Feature("Число предстоящих событий равно числу карточек мероприятий")
+    @Description("Тест проверяет верное ли кол-во карточек отображается у пользователя:кол-во карточек = кол-ву предстоящих мероприятий")
     public void testEvents(){
         Home homePage = new Home(driver);
         logger.info("Драйвер поднят");
@@ -19,7 +24,6 @@ public class ViewEventsTest extends BaseSettings {
                 .clickEvents();
         logger.info("Переход в вкладку EVENTS");
         Events events = new Events(driver);
-        //Сравниваем кол-во мероприятий и карточек
         Assert.assertEquals(events.getEvents(),events.getCards());
 
     }

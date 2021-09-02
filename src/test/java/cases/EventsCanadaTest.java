@@ -1,5 +1,9 @@
 package cases;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -18,6 +22,11 @@ public class EventsCanadaTest extends BaseSettings {
     private final SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy", Locale.ENGLISH);
 
     @Test
+    @Step("Проверка дат заданным условиям и кол-во карточек")
+    @Epic("EventsCanada-Просмотр прошедших мероприятий в Канаде")
+    @Feature("Фильтрация мероприятий")
+    @Description("Тест проверяет корректное отображение карточек:все мероприятия имеют дату меньше текущей," +
+            "количество карточек равно счетчику на кнопке Past Events")
     public void validationDateEventsCanada() throws ParseException, InterruptedException {
         Map<String, String> dateMap = new HashMap<>();
         StringBuilder startDate;

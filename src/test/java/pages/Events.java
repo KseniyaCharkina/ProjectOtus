@@ -1,9 +1,10 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 import java.util.*;
 
@@ -25,28 +26,32 @@ public class Events extends AbstractPage {
         super(driver);
     }
 
+    @Step("Считываем кол-во карточек")
     public int getCards() {
         return driver.findElements(card).size();
     }
 
-
+    @Step("Считываем кол-во предстоящих мероприятий")
     public int getEvents() {
         return Integer.parseInt(driver.findElement(eventsCount).getText());
     }
 
+    @Step("Считываем кол-во прошедших мероприятий")
     public int getPastEvents() {
         return Integer.parseInt(driver.findElement(pastEventsCount).getText());
     }
 
-
+    @Step("Выбрать отображение карточек прошедших меропиятий")
     public void enterPastEvents() {
         driver.findElement(pastEventsButton).click();
     }
 
+    @Step("Выбрать отображение карточек предстоящих меропиятий")
     public void enterUpcomingEvents() {
         driver.findElement(upComingEventsButton).click();
     }
 
+    @Step("Получение дат мероприятий в строковом формате")
     public List<String> getDates() {
         List<WebElement> listCards = driver.findElements(card);
         List<String> dates = new ArrayList<>();
@@ -57,10 +62,12 @@ public class Events extends AbstractPage {
         return dates;
     }
 
+    @Step("Фильтр по локации")
     public void locationFilter() {
         driver.findElement(locationFilter).click();
     }
 
+    @Step("Проверка содержания карточки:язык,название,дата,статус регистрации")
     public boolean validateAtributes() {
         //Получаем лист карточек
         List<WebElement> list = driver.findElements(card);
@@ -79,6 +86,7 @@ public class Events extends AbstractPage {
         return true;
     }
 
+    @Step("Canada")
     public void canadaEnter() {
         driver.findElement(canadaEnter).click();
 

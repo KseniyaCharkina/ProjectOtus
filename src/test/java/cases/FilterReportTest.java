@@ -1,5 +1,9 @@
 package cases;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -13,6 +17,10 @@ public class FilterReportTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(FilterReportTest.class);
 
     @Test
+    @Step("Настраиваем фильтры,проверяем результат")
+    @Epic("FilterReport-Фильтрация мероприятий")
+    @Feature("Фильтрация мероприятий")
+    @Description("Тест проверяет соответствие результатов выбраной фильтрации")
     public void reportTest() {
         Home homePage = new Home(driver);
         logger.info("Драйвер поднят");

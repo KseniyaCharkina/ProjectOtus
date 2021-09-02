@@ -118,3 +118,58 @@
 2021-08-21 00:45:34,818 INFO c.ReportQATest [main] Переход на страницу VIDEO
 2021-08-21 00:47:06,147 INFO c.ReportQATest [main] Драйвер поднят
 2021-08-21 00:47:11,726 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-01 10:41:00,290 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 10:41:08,803 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 10:49:01,149 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 10:49:05,930 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 12:29:53,771 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 12:29:58,271 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 12:31:40,495 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 12:31:46,342 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 12:38:56,573 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 12:39:01,116 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 12:48:46,478 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 12:48:52,783 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 13:07:00,670 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 13:07:06,663 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 13:09:03,736 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 13:09:08,296 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 13:57:57,794 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 13:58:03,976 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 14:03:12,178 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 14:03:16,877 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 14:28:52,724 INFO c.ViewEventsTest [main] Драйвер поднят
+2021-09-01 14:28:59,510 INFO c.ViewEventsTest [main] Переход в вкладку EVENTS
+2021-09-01 23:06:28,858 INFO c.ValidationDateTest [main] Драйвер поднят
+2021-09-01 23:06:33,891 INFO c.ValidationDateTest [main] Переход в вкладку EVENTS
+2021-09-01 23:06:35,759 INFO c.ValidationDateTest [main] Получен лист дат в формате string
+2021-09-02 09:56:13,800 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 09:56:20,888 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 09:56:23,497 INFO c.ReportQATest [main] Вводим текст.Переходим в карточку.Смотрим название мероприятия
+2021-09-02 09:57:46,301 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 09:57:51,312 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 10:12:12,407 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 10:12:18,621 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 10:12:22,545 INFO c.ReportQATest [main] Вводим текст.Переходим в карточку.Смотрим название мероприятия
+2021-09-02 10:21:02,677 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 10:21:08,066 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 10:23:45,764 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 10:23:50,592 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 10:45:16,100 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 10:45:31,069 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 10:45:35,545 INFO c.ReportQATest [main] Вводим текст.Переходим в карточку.Смотрим название мероприятия
+2021-09-02 10:48:56,419 INFO c.ReportQATest [main] Драйвер поднят
+2021-09-02 10:49:06,886 INFO c.ReportQATest [main] Переход на страницу VIDEO
+2021-09-02 10:49:11,523 INFO c.ReportQATest [main] Вводим текст.Переходим в карточку.Смотрим название мероприятия
+2021-09-02 10:56:57,451 INFO c.FilterReportTest [main] Драйвер поднят
+2021-09-02 10:57:07,367 INFO c.FilterReportTest [main] Переход на страницу VIDEO
+2021-09-02 10:57:15,454 INFO c.FilterReportTest [main] Заданы фильтры.Переход на страницу карточки.
+2021-09-02 10:58:52,874 INFO c.FilterReportTest [main] Драйвер поднят
+2021-09-02 10:58:57,609 INFO c.FilterReportTest [main] Переход на страницу VIDEO
+2021-09-02 10:59:01,654 INFO c.FilterReportTest [main] Заданы фильтры.Переход на страницу карточки.
+2021-09-02 11:13:48,347 INFO c.EventsCanadaTest [main] Драйвер поднят
+2021-09-02 11:13:56,135 INFO c.EventsCanadaTest [main] Выбрана вкладка PAST_EVENTS
+2021-09-02 11:13:56,902 INFO c.EventsCanadaTest [main] Установлен фильтр Canada
+2021-09-02 11:27:23,614 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-09-02 11:27:28,171 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-09-02 11:27:34,070 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS

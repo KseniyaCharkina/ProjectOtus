@@ -1,5 +1,9 @@
 package cases;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -19,6 +23,15 @@ public class ValidationDateTest extends BaseSettings {
 
 
     @Test
+    @Step("Сравнение текущей даты с датами предстоящих мероприятий." +
+            "Получаем лист дат." +
+            "Проходим по листу.Разбиваем строку на подстроки - начало и конец мероприятия.Кладем в мапу." +
+            "Получаем даты в строковом значении и преобразуем в Date.Assert по условиям.")
+    @Epic("ValidationDate-сравнение дат мероприятий с текущей")
+    @Feature("Отображение даты предстоящих мепроприятий")
+    @Description("Тест проверяет соответствуют ли даты предстоящих мероприятий заданным условиям:" +
+            "Даты проведения мероприятий больше или равны текущей дате " +
+            "(или текущая дата находится в диапазоне дат проведения)")
     public void validationTest() throws ParseException {
         Map<String, String> dateMap = new HashMap<>();
         StringBuilder startDate;
@@ -35,7 +48,6 @@ public class ValidationDateTest extends BaseSettings {
         logger.info("Получен лист дат в формате string");
         //Проходим по листу.Разбиваем строку на подстроки - начало и конец мероприятия.Кладем в мапу.
         for (String date : dates) {
-
             String one = date.substring(0, date.indexOf("-"));
             endDate = date.substring(date.indexOf("-") + 2);
             String year = date.substring(date.length() - 4);
