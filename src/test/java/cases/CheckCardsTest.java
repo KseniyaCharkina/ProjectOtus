@@ -12,12 +12,11 @@ import pages.Events;
 import pages.Home;
 import utils.BaseSettings;
 
+@Epic("Карточки мероприятий")
 public class CheckCardsTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(CheckCardsTest.class);
 
     @Test
-    @Step("Выбираем прошедшие мероприятия.Проверяем данные карточек")
-    @Epic("CheckCards-Проверка карточек мероприятий")
     @Feature("Вывод информации о мероприятии в карточку")
     @Description("Тест проверяет есть ли на карточках необходимый набор атрибутов")
     public void testPastEvents() throws InterruptedException {

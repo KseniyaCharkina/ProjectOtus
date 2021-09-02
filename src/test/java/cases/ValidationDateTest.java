@@ -16,6 +16,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+@Epic("Даты мероприятий")
 public class ValidationDateTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(ValidationDateTest.class);
     private final Date now = new Date();
@@ -23,11 +24,6 @@ public class ValidationDateTest extends BaseSettings {
 
 
     @Test
-    @Step("Сравнение текущей даты с датами предстоящих мероприятий." +
-            "Получаем лист дат." +
-            "Проходим по листу.Разбиваем строку на подстроки - начало и конец мероприятия.Кладем в мапу." +
-            "Получаем даты в строковом значении и преобразуем в Date.Assert по условиям.")
-    @Epic("ValidationDate-сравнение дат мероприятий с текущей")
     @Feature("Отображение даты предстоящих мепроприятий")
     @Description("Тест проверяет соответствуют ли даты предстоящих мероприятий заданным условиям:" +
             "Даты проведения мероприятий больше или равны текущей дате " +

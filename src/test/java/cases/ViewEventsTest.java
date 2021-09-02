@@ -9,12 +9,11 @@ import pages.Events;
 import pages.Home;
 import utils.BaseSettings;
 
+@Epic("Счетчик событий")
 public class ViewEventsTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(ViewEventsTest.class);
 
     @Test
-    @Step("Сравнение кол-ва мероприятий и карточек")
-    @Epic("ViewEvents-Корректное отображение карточек")
     @Feature("Число предстоящих событий равно числу карточек мероприятий")
     @Description("Тест проверяет верное ли кол-во карточек отображается у пользователя:кол-во карточек = кол-ву предстоящих мероприятий")
     public void testEvents(){

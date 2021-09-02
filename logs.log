@@ -173,3 +173,6 @@
 2021-09-02 11:27:23,614 INFO c.CheckCardsTest [main] Драйвер поднят
 2021-09-02 11:27:28,171 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
 2021-09-02 11:27:34,070 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS
+2021-09-02 21:08:49,989 INFO c.CheckCardsTest [main] Драйвер поднят
+2021-09-02 21:08:54,806 INFO c.CheckCardsTest [main] Переход в вкладку EVENTS
+2021-09-02 21:09:00,848 INFO c.CheckCardsTest [main] Выбрана вкладка PAST_EVENTS

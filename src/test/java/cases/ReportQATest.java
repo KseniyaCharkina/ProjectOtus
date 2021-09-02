@@ -13,12 +13,11 @@ import pages.Home;
 import pages.TalksLibrary;
 import utils.BaseSettings;
 
+@Epic("Поиск")
 public class ReportQATest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(ReportQATest.class);
 
     @Test
-    @Step("Проверка результатов поиска.Название мероприятия содержит ключевое слово")
-    @Epic("CheckQA-Поиск по ключевому слову")
     @Feature("Поиск по ключевому слову")
     @Description("Тест проверяет результаты поиска приложения по ключевому слову")
     public void checkReport() {

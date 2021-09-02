@@ -16,14 +16,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+@Epic("Проверка дат заданным условиям и кол-во карточек прошедших мероприятий в Канаде")
 public class EventsCanadaTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(EventsCanadaTest.class);
     private final Date now = new Date();
     private final SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy", Locale.ENGLISH);
 
     @Test
-    @Step("Проверка дат заданным условиям и кол-во карточек")
-    @Epic("EventsCanada-Просмотр прошедших мероприятий в Канаде")
     @Feature("Фильтрация мероприятий")
     @Description("Тест проверяет корректное отображение карточек:все мероприятия имеют дату меньше текущей," +
             "количество карточек равно счетчику на кнопке Past Events")

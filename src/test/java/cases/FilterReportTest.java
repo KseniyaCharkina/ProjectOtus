@@ -13,12 +13,11 @@ import pages.Home;
 import pages.TalksLibrary;
 import utils.BaseSettings;
 
+@Epic("Фильтрация мероприятий")
 public class FilterReportTest extends BaseSettings {
     private final Logger logger = LogManager.getLogger(FilterReportTest.class);
 
     @Test
-    @Step("Настраиваем фильтры,проверяем результат")
-    @Epic("FilterReport-Фильтрация мероприятий")
     @Feature("Фильтрация мероприятий")
     @Description("Тест проверяет соответствие результатов выбраной фильтрации")
     public void reportTest() {
